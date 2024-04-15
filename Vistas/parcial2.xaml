@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hchavezT2v1.Vistas.parcial2"
+             Title="Parcial 2">
+
+    <VerticalStackLayout>
+        <Image Source="logouis.png"></Image>
+        <Label Text="Nota de seguimiento 2:" />
+        <Entry x:Name="notaSeguimiento2Entry" Placeholder="Ingrese la nota de seguimiento 2 (1-10)" Keyboard="Numeric" />
+
+        <Label Text="Examen 2:" />
+        <Entry x:Name="examen2Entry" Placeholder="Ingrese la nota del examen 2 (1-10)" Keyboard="Numeric" />
+
+         <Label  />
+        <Entry x:Name="notaParcial1Entry" Placeholder="Ingrese la nota parcial 1 (1-10)" Keyboard="Numeric" />
+
+
+        <DatePicker x:Name="datePicker" />
+        
+        <Button Text="Calcular" Clicked="OnCalcularClicked" />
+
+        <Label x:Name="resultadoLabel" TextColor="Green" />
+
+        
+    </VerticalStackLayout>
+
+
+</ContentPage>

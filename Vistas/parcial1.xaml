@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hchavezT2v1.Vistas.parcial1"
+             Title="Parcial 1">
+    <VerticalStackLayout>
+        
+        <Image Source="logouis.png"></Image>
+        <Picker x:Name="nombrePicker">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>henry chavez</x:String>
+                    <x:String>luis carrasco</x:String>
+                    <x:String>Valentina Marin</x:String>
+                    <x:String>Ashley aldas</x:String>
+                    <x:String>Andres Hernandez</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Nota de seguimiento:" />
+        <Entry x:Name="notaSeguimientoEntry" Placeholder="Ingrese la nota de seguimiento (1-10)" Keyboard="Numeric" />
+
+        <Label Text="Examen 1:" />
+        <Entry x:Name="examen1Entry" Placeholder="Ingrese la nota del examen 1 (1-10)" Keyboard="Numeric" />
+
+        <Button x:Name="calculoButton" Text="Calcular" Clicked="OnCalcularClicked"/>
+
+        <Label x:Name="resultadoLabel" TextColor="Green" />
+
+        <Button x:Name="siguiente1" Text="Siguiente -->" Clicked="btnsiguiente_Clicked" ></Button>
+    </VerticalStackLayout>
+
+</ContentPage>
